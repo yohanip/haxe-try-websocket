@@ -5,3 +5,6 @@
 - js
   remember to run the server first!
   - debug launch chrome
+
+## why creating WebSock derived from hx.ws.WebSocket?
+Because debugging a threaded haxe makes the app unstable, i use mainloop instead to update the socket
