@@ -1,8 +1,10 @@
-import haxe.MainLoop;
 import hx.ws.Log;
 import hx.ws.WebSocket;
-import hx.ws.WebSocketServer;
 import hx.ws.Types.MessageType;
+
+#if sys
+import haxe.MainLoop;
+import hx.ws.WebSocketServer;
 import hx.ws.WebSocketHandler;
 
 class ServerHandler2 extends WebSocketHandler {
@@ -32,6 +34,7 @@ class ServerHandler2 extends WebSocketHandler {
 		}
 	}
 }
+#end
 
 #if js
 function setup_js(host:String, port:Int) {

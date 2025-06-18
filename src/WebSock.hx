@@ -1,3 +1,4 @@
+#if sys
 import hx.ws.SecureSocketImpl;
 import hx.ws.HttpResponse;
 import hx.ws.HttpHeader;
@@ -180,4 +181,5 @@ class WebSock extends WebSocketCommon {
 		return Base64.encode(b);
 	}
 }
+#end
 #end
