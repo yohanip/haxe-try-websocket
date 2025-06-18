@@ -1,0 +1,34 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "CompileServer",
+			"type": "shell",
+			"command": "haxe",
+			"args": ["server.build.hxml"],
+			"problemMatcher": "$haxe"
+		},
+		{
+			"label": "RunServer",
+			"type": "shell",
+			"command": "hl",
+			"args": ["--debug", "6112", "out/server.hl"],
+			"dependsOn": ["CompileServer"]
+		},
+		{
+			"label": "CompileClient",
+			"type": "shell",
+			"command": "haxe",
+			"args": ["client.build.hxml"],
+			"problemMatcher": "$haxe"
+		},
+		{
+			"label": "CompileJS",
+			"type": "shell",
+			"command": "haxe",
+			"args": ["js.build.hxml"],
+			"problemMatcher": "$haxe"
+		},
+		
+	]
+}

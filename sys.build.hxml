@@ -1,0 +1,13 @@
+-cp src
+-main MainSys
+-hl out/sys.hl
+-debug
+
+-lib hxWebSockets
+-lib heaps
+-lib hxbit
+-lib hlsdl
+-lib tink_concurrent
+-lib tink_core
+
+-D concurrent

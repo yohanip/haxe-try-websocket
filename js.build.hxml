@@ -1,0 +1,7 @@
+-cp src
+-main MainSys
+-debug
+-lib hxWebSockets
+-lib heaps
+
+-js out/main.js

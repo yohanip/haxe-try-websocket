@@ -1,0 +1,40 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Haxe Interpreter",
+			"type": "haxe-eval",
+			"request": "launch"
+		},
+		{
+			"name": "HL1",
+			"request": "launch",
+			"type": "hl",
+			"cwd": "${workspaceFolder}",
+			"preLaunchTask": {
+				"type": "haxe",
+				"args": "active configuration"
+			},
+			"port": 6112
+		},
+		{
+			"name": "HL2",
+			"request": "launch",
+			"type": "hl",
+			"cwd": "${workspaceFolder}",
+			"preLaunchTask": {
+				"type": "haxe",
+				"args": "active configuration"
+			},
+			"port": 6113
+		},
+		{
+			"name": "Launch Chrome",
+			"request": "launch",
+			"type": "chrome",
+			"url": "file://${workspaceFolder}/index.html",
+			"webRoot": "${workspaceFolder}",
+			"preLaunchTask": "CompileJS"
+		}
+	]
+}
